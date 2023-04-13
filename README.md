@@ -19,6 +19,7 @@ Both Sagemaker and EC2 code for train the model are similar instead the followin
 </p>  
 
 - The lambda function has been deployed with the provided code by updating the endpoint name as above.  
+
 ![image](https://user-images.githubusercontent.com/98076289/231745401-208c39d3-1ed6-4a17-bd16-a9b1fc0360b0.png)
  
 
