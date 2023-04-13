@@ -81,4 +81,18 @@ b037da00-0ad4-4465-b22e-fcd0737d280d
     ]
 }
 ```
+# Step5 - Concurrency and auto-scaling  
+- As the concurrency type I have been chosen the provisioned concurrency which will help to avoid the startup time and which make delay to respond to requests.  
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/98076289/231814531-ac203535-e47a-4d1f-9b31-fb205a2a67c3.png">
+</p>
+
+- The endpoint autoscaling has been configures as below to add more instances for the endpoint when the Sagemaker Endpoint invokations hit the target value 30 and it will add maximum 2 instance.  
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/98076289/231818868-cdc41f20-0b68-492f-ae6c-b156b03820d3.png">
+</p>
+
+
 
