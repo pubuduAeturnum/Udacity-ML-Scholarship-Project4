@@ -45,7 +45,7 @@ Both Sagemaker and EC2 code for train the model are similar instead the followin
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/98076289/231743551-8f8c6dc6-31cb-47f7-81dc-fc301d873552.png">
-</p>
+</p>  
 
 - The test event results are as below:  
 
