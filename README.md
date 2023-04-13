@@ -18,7 +18,9 @@ Both Sagemaker and EC2 code for train the model are similar instead the followin
     <img src="https://user-images.githubusercontent.com/98076289/231739837-21ac41f9-c023-4411-9a59-d93bf0740a62.png">
 </p>  
 
-- The lambda function has been deployed with the provided code by updating the endpoint name as above.   
+- The lambda function has been deployed with the provided code by updating the endpoint name as above.  
+![image](https://user-images.githubusercontent.com/98076289/231745401-208c39d3-1ed6-4a17-bd16-a9b1fc0360b0.png)
+ 
 
 # Step4 - Security & Testing
 - Intial function didn't have the necessary permission to access to the Sagemaker. Therefore, Sagemaker full access permission has been attached to the endpoint-invocation-role-27an2d7i role.  
