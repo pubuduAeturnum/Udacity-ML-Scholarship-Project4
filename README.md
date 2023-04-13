@@ -11,7 +11,9 @@
 </p> 
 According to the above note deplayed on DLAMI instances in ec2 G3,P3,P3de, G5, G4dn instance tpes are supported for the Deep Learning AMI GPU PyTorch 2.0.0 (Amazon Linux 2) 20230406Deep Learning AMI GPU PyTorch 2.0.0 (Amazon Linux 2) 20230406. Therefore G3 instance type has been chosen to provide the optimal level of requirement for the AMI and On demand instance has been chosen due to spot instance are not defaulting supported for G3 the service quota for the G3 instance should be increased to achieve this.
 
-# The EC2 Code Compared to the SageMaker Code:
+# Step2 - EC2 Training  
+
+- The EC2 Code Compared to the SageMaker Code:
 <p align="center">
     <img src="https://user-images.githubusercontent.com/98076289/231662055-14f3c1ed-1629-4312-ad10-d97bba454714.png">
 </p> 
