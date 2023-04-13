@@ -14,6 +14,22 @@ Both Sagemaker and EC2 code for train the model are similar instead the followin
 - Also in Sagemaker we have to store data in S3 bucket, and have to import them into sagemaker using sagemaker method to train the models. But in EC2 instance it is more similar to train the model inside an own machine.
 
 # Step3 - The Lambda Function  
-- The lambda function has been deployed with the provided code by updating the endpoint name as above.
-- Intial function didn't have the necessary permission to access to the Sagemaker. Therefore, Sagemaker full access permission has been attached to the endpoint-invocation-role-27an2d7i role.
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/98076289/231739837-21ac41f9-c023-4411-9a59-d93bf0740a62.png">
+</p>  
+
+- The lambda function has been deployed with the provided code by updating the endpoint name as above.  
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/98076289/231737447-d834e509-9f49-4cc0-8dbc-91d6585408e7.png">
+</p>  
+
+- Intial function didn't have the necessary permission to access to the Sagemaker. Therefore, Sagemaker full access permission has been attached to the endpoint-invocation-role-27an2d7i role.  
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/98076289/231738553-00a7e088-941d-4047-ba89-b4ba66a6545b.png">
+</p>  
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/98076289/231738110-4e2a640d-9845-44e9-a86f-42143fecaa7b.png">
+</p>  
+
 - After attaching the role the endpoint invokation was successfully done with the "url": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/20113314/Carolina-Dog-standing-outdoors.jpg".
