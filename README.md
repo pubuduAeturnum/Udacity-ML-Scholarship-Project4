@@ -28,11 +28,13 @@ Both Sagemaker and EC2 code for train the model are similar instead the followin
 <p align="center">
     <img src="https://user-images.githubusercontent.com/98076289/231738553-00a7e088-941d-4047-ba89-b4ba66a6545b.png">
 </p>  
+  
+- After attaching the role the endpoint invokation was successfully done with the "url": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/20113314/Carolina-Dog-standing-outdoors.jpg".  
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/98076289/231738110-4e2a640d-9845-44e9-a86f-42143fecaa7b.png">
-</p>  
-- After attaching the role the endpoint invokation was successfully done with the "url": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/20113314/Carolina-Dog-standing-outdoors.jpg".
+    <img src="https://user-images.githubusercontent.com/98076289/231743551-8f8c6dc6-31cb-47f7-81dc-fc301d873552.png">
+</p>
+
 - The test event results are as below:  
 
 ```
