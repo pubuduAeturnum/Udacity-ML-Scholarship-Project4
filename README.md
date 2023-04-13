@@ -12,3 +12,8 @@ According to the above note deplayed on DLAMI instances in ec2 G3,P3,P3de, G5, G
 Both Sagemaker and EC2 code for train the model are similar instead the followings;
 - In Sagemaker we first do the hyperparameter tuning for and select the best parameter values for the model training but in ec2 instance training job we didn't do such kind of hyper parameter tuning..
 - Also in Sagemaker we have to store data in S3 bucket, and have to import them into sagemaker using sagemaker method to train the models. But in EC2 instance it is more similar to train the model inside an own machine.
+
+# Step3 - The Lambda Function  
+- The lambda function has been deployed with the provided code by updating the endpoint name as above.
+- Intial function didn't have the necessary permission to access to the Sagemaker. Therefore, Sagemaker full access permission has been attached to the endpoint-invocation-role-27an2d7i role.
+- After attaching the role the endpoint invokation was successfully done with the "url": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/20113314/Carolina-Dog-standing-outdoors.jpg".
