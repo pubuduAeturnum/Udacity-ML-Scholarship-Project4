@@ -1,10 +1,10 @@
-# Step1 - Training and deployment on Sagemaker
+# Step1 - Training and deployment on Sagemaker  
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/98076289/231820225-ee0f3bc7-b437-4577-abb2-b163fd188ea3.png">
-</p>
+</p>  
 
--Above is the Sagemaker Studio Notebook instance screenshot I have been used to train the model
+- Above is the Sagemaker Studio Notebook instance screenshot I have been used to train the model
 - Justification about the selected EC2 Instance Type:
 <p align="center">
     <img src="https://user-images.githubusercontent.com/98076289/231658842-6b3d3b3a-b5a7-4fdf-add9-59fff6c06cd8.png">
