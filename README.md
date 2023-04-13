@@ -67,5 +67,5 @@ REPORT RequestId: b037da00-0ad4-4465-b22e-fcd0737d280d	Duration: 1001.61 ms	Bill
 Request ID
 b037da00-0ad4-4465-b22e-fcd0737d280d
 ```
-
+- The AWS workspace is not 100% secure due to lamda function has full access to the sagemaker and it can be used to delete the deployed endpoint. Therefore, some vulnerabilities may occur and it can be reduce by providing more strict IAM policy to lambdafunction to just allowing the invoking sagemaker endpoint only and deny other permissions from it.
 
