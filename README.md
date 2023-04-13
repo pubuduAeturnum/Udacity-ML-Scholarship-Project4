@@ -67,5 +67,18 @@ REPORT RequestId: b037da00-0ad4-4465-b22e-fcd0737d280d	Duration: 1001.61 ms	Bill
 Request ID
 b037da00-0ad4-4465-b22e-fcd0737d280d
 ```
-- The AWS workspace is not 100% secure due to lamda function has full access to the sagemaker and it can be used to delete the deployed endpoint. Therefore, some vulnerabilities may occur and it can be reduce by providing more strict IAM policy to lambdafunction to just allowing the invoking sagemaker endpoint only and deny other permissions from it.
+- The AWS workspace is not 100% secure due to lamda function has full access to the sagemaker and it can be used to delete the deployed endpoint. Therefore, some vulnerabilities may occur and it can be reduce by providing more strict IAM policy to lambdafunction to just allowing the invoking sagemaker endpoint only and deny other permissions using a custome inline policy as below;
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "sagemaker:InvokeEndpoint",
+            "Resource": "arn:aws:sagemaker:us-east-1:041360578609:endpoint/pytorch-inference-2023-04-13-14-58-34-578"
+        }
+    ]
+}
+```
 
